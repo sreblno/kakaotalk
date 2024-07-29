@@ -1,0 +1,268 @@
+.Chat {
+  width: 100%;
+  height: 100vh;
+  background-color: #d9e4ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.x {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 14px;
+}
+
+.Chat-header {
+  background-color: #bacee0;
+  width: 400px;
+  height: 700px;
+  border-radius: 5px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0 0 5px #b3b3b3;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollBlind {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.scrollBlind::-webkit-scrollbar {
+  display: none;
+}
+
+.topContainer {
+  height: 85px;
+  min-height: 85px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.chatname {
+  position: absolute;
+  left: 64px;
+  top: 35px;
+  font-size: 14.9px;
+}
+
+.top_profile {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  top: 27px;
+  left: 6px;
+}
+
+.top_person {
+  position: absolute;
+  top: 52px;
+  left: 59px;
+  scale: 0.69 0.69;
+}
+
+.topnum {
+  position: absolute;
+  top: 56.5px;
+  left: 80px;
+  color: #6c7882;
+  font-weight: bold;
+}
+
+.top_setting {
+  position: absolute;
+  scale: 0.665 0.665;
+  top: 38px;
+  left: 239px;
+}
+
+.top {
+  position: absolute;
+  scale: 0.66 0.66;
+  top: 3px;
+  left: 313px;
+}
+
+.top_x {
+  position: absolute;
+  opacity: 0;
+  scale: 0.66 0.66;
+  top: 1.5px;
+  left: 375.5px;
+}
+
+.top_x:hover {
+  opacity: 1;
+}
+
+.message {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: block;
+  max-width: 65%;
+  padding: 5px;
+  word-break: break-word;
+}
+
+.system-message {
+  text-align: center;
+  background-color: #b1c3d5;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 12px 4.5px 12px;
+  border-radius: 12px;
+  color: rgb(65, 65, 65);
+}
+
+.system-message .nick {
+  display: none;
+}
+
+.my-message {
+  align-self: flex-end;
+  background-color: #ffeb33;
+  display: inline-block;
+  padding: 4px 8px 7px;
+  border-radius: 2px;
+  border: 1px solid #9eafbf;
+  border-top: none;
+  box-shadow: 0px 1px 1px #9eafbf;
+  margin-top: 5px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.my-message::before {
+  content: '';
+  position: absolute;
+  right: -16px;
+  top: -1%;
+  transform: rotate(159deg);
+  border-left: 10px solid transparent;
+  border-right: 10px solid #ffeb33;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.my-message .nick {
+  display: none;
+}
+
+.other-message {
+  align-self: flex-start;
+  position: relative;
+  overflow: visible;
+  margin-left: 50px;
+}
+
+.other-message::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 43%;
+  transform: rotate(21deg);
+  border-left: 10px solid transparent;
+  border-right: 10px solid white;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.other-message .nick {
+  margin-left: 1px;
+}
+
+.other-message .message-content {
+  background-color: white;
+  display: inline-block;
+  padding: 4px 8px 7px;
+  border-radius: 2px;
+  border: 1px solid #9eafbf;
+  border-top: none;
+  box-shadow: 0px 1px 1px #9eafbf;
+  margin-top: 5px;
+}
+
+.other-message img {
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: -49px;
+  top: 3px;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #bacee0;
+}
+
+.inputMessage {
+  width: 100%;
+  padding: 8px;
+  height: 70px;
+  resize: none;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 12px;
+  font-family: -apple-system
+}
+
+.inputMessage::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+}
+
+.bottom img {
+  scale: 0.65 0.65;
+  translate: -67px 3.5px;
+  position: fixed;
+}
+
+.bottom button {
+  width: 14%;
+  height: 30px;
+  margin-top: 12.5px;
+  border-radius: 3px;
+  color: #999999;
+  background-color: #f2f2f2;
+  border: none;
+  float: right;
+  margin-right: 7.5px;
+}
+
+.bottom button.active {
+  background-color: #fee500;
+  color: black;
+}
+
+.bottom button.active:hover {
+  background-color: #fada0a;
+}

@@ -1,0 +1,165 @@
+.Login {
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  height: 3vh;
+  padding-top: 19vh;
+  margin-bottom: -3vh;
+  justify-content: center;
+}
+
+.title img {
+  width: 100px;
+  margin-left: 1vw;
+  align-self: center;
+}
+
+.box {
+  width: 580px;
+  height: 100%;
+  min-height: 480px;
+  margin: 40px auto 42px;
+  padding: 0 69px;
+  padding-top: 30px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.nickname {
+  width: 420px;
+  height: 25px;
+  margin-top: 27px;
+  border-width: 0 0 2.5px;
+  border-color: #cccccc;
+  font-size: 18px;
+  padding-bottom: 5px;
+  outline: none;
+}
+
+.nickname:focus {
+  border-color: rgb(35, 35, 35);
+}
+
+.check {
+  text-align: left;
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.round-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-left: 10px;
+  border: 1.7px solid #8e8e8e;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  vertical-align: -8px;
+}
+
+.round-checkbox:checked {
+  background-color: #ffeb3b;
+  border: 1.7px solid #ffeb3b;
+}
+
+.round-checkbox:checked::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 5px;
+  height: 8.5px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: translate(-25%, -25%) rotate(45deg);
+}
+
+.log {
+  margin-top: 40px;
+  background-color: #fee500;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 51px;
+  color: #191919;
+  border: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.log:hover {
+  background-color: #fada0a;
+}
+
+.or {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 12px;
+  line-height: 19px;
+  color: #909090;
+}
+
+.or::after,
+.or::before {
+  display: inline-block;
+  width: calc(50% - 40px);
+  height: 2px;
+  margin: 8px 0;
+  background-color: rgba(0, 0, 0, .06);
+  vertical-align: top;
+  content: "";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.qr {
+  background-color: #efefef;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 51px;
+  color: #191919;
+  border: 0;
+}
+
+.qr:hover {
+  background-color: #ebebeb;
+}
+
+.bl {
+  float: left;
+  margin-top: 26px;
+}
+
+.br {
+  float: right;
+  margin-top: 26px;
+  color: #666;
+}
+
+.l {
+  font-size: 13px;
+  color: #666;
+  width: 100vw;
+}
+
+.bold {
+  font-weight: bold;
+}
