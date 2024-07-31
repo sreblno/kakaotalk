@@ -25,6 +25,7 @@ const Chat = () => {
     newSocket.on('login', (data) => {
       setIsConnected(true);
       setNumUsers(data.numUsers);
+      addChatMessage({ nickname: 'System', message: `${nickname}님이 들어왔습니다.`, type: 'system-message' });
     });
 
     newSocket.on('user joined', (data) => {
